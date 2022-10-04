@@ -1,0 +1,55 @@
+from math import sqrt
+from numpy import *
+#Operasi perhitungan sederhana
+a = 50
+b = 2.5
+c = 15/3
+
+print(a*c)
+print("Bilangan integer =", int(b))
+print("Bilangan float =", float(b))
+print("Bilangan float =", float(c))
+print("Bilangan integer =", int(c))
+
+print("Penjumlahan a + c =", a+c)
+print("Perkalian a x c=", a*c)
+print("Pengurangan a - c=", a-c)
+print("Pembagian a/c", a/c)
+
+print("--------------------------------")
+print("Soal 1 = tentukan energi J dari m = 9.31x10^-31; c = 3x10^8")
+m = 9.31*10**-31
+c = 3*10**8
+#Energi = m x c^2
+E = m * c**2
+print(E)
+
+print("--------------------------------")
+print("Soal 2 = tentukan periode dalam s (l = 1.5 m ; g = 9.8 m/s^2 ")
+l = 1.5
+g = 9.8
+periode = 2*pi*sqrt(l/g)
+print(periode)
+
+print("Soal 3 = tentukan jarak(s) tempuh motor Ucok dari Bandung ke Sumedang (t = 10 s ; v = 70 m/s ")
+t = 10
+v = 70
+# s = v/t
+s = v/t
+print("Jarak yang ditempuh =", float (s))
+
+
+------------------------------
+
+
+import matplotlib.pyplot as plt
+from numpy import arange,sin,cos
+
+x = arange(0.0,0.6,0.1)
+plt.plot(x,sin(x),'o-',x,cos(x),'s-')
+plt.title('grafik')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend(('sinus','cosinus'),loc = 0)
+plt.grid(True)
+plt.show()
